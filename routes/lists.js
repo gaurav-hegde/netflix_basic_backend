@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const List = require("../models/List");
-const verify = require("../verifyToken");
 
 router.post("/", async (req, res) => {
   if (req.user.isAdmin) {
